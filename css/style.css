@@ -163,6 +163,7 @@ font-size: 12px;
   border-radius: 2px;
   transition: all .5s linear;
   
+  cursor: pointer;
 }
 
 
@@ -170,6 +171,7 @@ font-size: 12px;
   background: #153416;
   border: 1px solid #153416;
   
+  cursor: pointer;
 }
 
 .remember input + label::after {
@@ -235,6 +237,10 @@ font-size: 12px;
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.footer-list li a {
+  display: block;
 }
 .footer-icon {
   width: 24px;
