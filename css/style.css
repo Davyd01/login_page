@@ -1,19 +1,17 @@
 @import url("reset.css");
 
-
-
 body {
-	font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #FFF;
-font-size: 12px;
+  color: #fff;
+  font-size: 12px;
 }
 
 .wrapper {
-  background: url('../img/bg.png') no-repeat center center;
-    background-size: cover;
-    background-attachment: scroll; /* Фон фиксируется при прокрутке */
-    height: 100vh; /* Растягивается на всю высоту окна */
+  background: url("../img/bg.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* Фон фиксируется при прокрутке */
+  height: 100vh; /* Растягивается на всю высоту окна */
   position: relative;
   overflow: hidden;
 }
@@ -37,9 +35,7 @@ font-size: 12px;
   margin: 0 0 0 auto;
   padding: 60px 0;
   overflow: auto;
-
 }
-
 
 .main {
   width: 340px;
@@ -47,11 +43,9 @@ font-size: 12px;
   /* background: yellow; */
 }
 
-
 .switch {
   margin-bottom: 75px;
 }
-
 
 .switch input {
   position: absolute;
@@ -69,44 +63,37 @@ font-size: 12px;
   /* gap: 118px; */
   cursor: pointer;
   border-radius: 100px;
-  
 }
-
 
 .switch input + label::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 2px;
   left: 2px;
   width: 168px;
   height: 32px;
   border-radius: 30px;
   background: #153416;
-  transition: all .5s linear;
-  
+  transition: all 0.5s linear;
+
   /* width: 50%; */
 }
 
 .switch input + label span {
   position: relative;
-  color: #FFF;
-  
+  color: #fff;
 }
 
 .switch input:checked + label::before {
   left: calc(100% - 2px);
   transform: translateX(-100%);
-
 }
-
-
 
 .entrency {
   text-align: center;
   font-size: 30px;
   margin-bottom: 29px;
 }
-
 
 .login-password input {
   padding: 15px 0 15px 20px;
@@ -115,6 +102,7 @@ font-size: 12px;
   border-radius: 30px;
   /* margin-bottom: 15px; */
   border: none;
+  transition: all .5s linear
 }
 
 #password {
@@ -122,23 +110,29 @@ font-size: 12px;
   margin-bottom: 21px;
 }
 
-
 .login-password input:focus {
   /* border: 3px solid #fff; */
   outline: 3px solid #fff;
+  /* background: #fff; */
 }
 
+.login-password input:hover{
+  background: #153416;
+}
+
+
+.login-password input::placeholder {
+  color: #fff;
+}
 
 .remember_forgot {
   margin-bottom: 30px;
 }
 
-
 .flex {
   display: flex;
   justify-content: space-between;
 }
-
 
 #remember-me {
   position: absolute;
@@ -153,34 +147,33 @@ font-size: 12px;
 }
 
 .remember input + label::before {
-  content: '';
+  content: "";
   top: -2px;
   left: 3px;
   position: absolute;
   width: 15px;
   height: 15px;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 2px;
-  transition: all .5s linear;
-  
+  transition: all 0.5s linear;
+
   cursor: pointer;
 }
-
 
 .remember input:checked + label::before {
   background: #153416;
   border: 1px solid #153416;
-  
+
   cursor: pointer;
 }
 
 .remember input + label::after {
-  content: '';
-  transition: all .2s linear;
+  content: "";
+  transition: all 0.2s linear;
 }
 
 .remember input:checked + label::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 8px;
@@ -189,26 +182,38 @@ font-size: 12px;
   width: 4px;
   height: 10px;
   transform: rotate(38deg);
-
 }
 
 .forgot a {
   color: #153416;
+  transition: all .5s linear;
   
 }
+
+.forgot a:hover {
+  color: #fff;
+  /* transform: rotate(1turn); */
+}
+
 .btn-entrency {
   margin-bottom: 55px;
 }
 
 .btn-entrency button {
-  color: #FFF;
+  color: #fff;
   background: #153416;
   width: 100%;
   padding: 15px 0;
   border-radius: 30px;
-  
+  cursor: pointer;
+  transition: all .5s linear;
 }
 
+
+.btn-entrency:hover button {
+  background: #fff;
+  color: #153416;
+} 
 
 .account {
   display: flex;
@@ -219,19 +224,24 @@ font-size: 12px;
 
 .account p {
   color: #153416;
-  
 }
 
 .account a {
-  color: #FFF;
+  color: #fff;
+  transition: all .5s linear;
 }
 
+.account a:hover {
+  color: #153416;
+  
+  /* transform: translateX(45px); */
+  /* transform: rotate(1turn); */
+}
 
-.footer p{
+.footer p {
   text-align: center;
   margin-bottom: 20px;
   color: #153416;
-  
 }
 .footer-list {
   display: flex;
@@ -245,6 +255,9 @@ font-size: 12px;
 .footer-icon {
   width: 24px;
   height: 24px;
-
 }
 
+
+.footer-icon:hover {
+  fill: #fff;
+}
